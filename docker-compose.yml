@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - VIRTUAL_HOST=webubuntu1.jimenezalfaro.es
+    restart: unless-stopped
